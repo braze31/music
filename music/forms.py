@@ -10,3 +10,14 @@ class UserForm(forms.ModelForm):
         model = User
         fields = ['username', 'email', 'password']
 
+class AlbumForm(forms.ModelForm):
+
+    class Meta:
+        model = Album
+        fields = ['artist', 'album_title', 'genre', 'album_logo']
+
+class SongForm(forms.ModelForm):
+
+    class Meta:
+        model = Song
+        fields = ['song_title', 'audio_file']
